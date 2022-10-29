@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url(./style/reset.scss);
+:root {
+  --azul-oscuro-principal: #1a535c;
+  --verde-claro-principal: #e7ffe8;
+  --azul-claro-resalte: #7acdca;
+  --verde-oscuro-principal: #012030;
+  --verde-oscuro-resalte: #3dd079;
+  --amarilloo-claro-resalte: #ffbd12;
+  --rojo-error: #cd2020;
+  --azul-oscuro-texto-campo-de-relleno-45-opacidad: rgba(33, 81, 91, 0.45);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+html{
+  font-size: 62.5%;
+  background-color: #dadada;
+  color: var(--verde-oscuro-principal);
+}
+
+
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

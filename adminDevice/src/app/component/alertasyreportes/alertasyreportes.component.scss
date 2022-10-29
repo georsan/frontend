@@ -1,0 +1,182 @@
+.container-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9.7rem;
+  font-weight: 800;
+  .container{
+    width: 32rem;
+    height: 50.1rem;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    .container-header{
+      display: flex;
+      flex-direction: row;
+      width: 32rem;
+      height: 8.9rem;
+      border-top-left-radius:1.5rem;
+      border-top-right-radius: 1.5rem;
+      background-color: #5fce7d;
+      position: relative;
+      text-align: left;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      .icon{
+        font-size: 4.9rem;
+        position: relative;
+        top: 2rem;
+        left: 2rem;
+        font-weight: 800;
+
+      }
+      .header-text{
+        position: relative;
+        width: 25.3rem;
+        left: 3rem;
+        top: 1.5rem;
+        font-weight: 800;
+        .titulo{
+          width: 25.3rem;
+          font-size: 1.6rem;
+        }
+        .texto{
+          font-weight: normal;
+          width: 20.5rem;
+          font-size: 1.2rem;
+          margin: 0.5rem 3.8rem 0 0;
+          font-size: 1.2rem;
+        }
+
+      }
+      #cancel{
+        cursor: pointer;
+        position: absolute;
+        left: 28.5rem;
+        bottom: 5.3rem;
+        font-size: 3rem;
+      }
+
+    }
+
+    .body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0rem;
+      .text-alertas {
+        position: relative;
+        right: 1rem;
+        width: 25.3rem;
+        height: 1.7rem;
+        flex-grow: 0;
+        margin: 1.5rem 5.192rem 0.5rem 0.7rem;
+        padding: 0.206rem 12.708rem 0.394rem 1.992rem;
+        font-size: 1.6rem;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+      }
+      .checkbox{
+        width: 32rem;
+        height: 6.8rem;
+        gap: 4rem;
+        margin: 0.5rem 0 0;
+        padding: 1.4rem 2rem 1.4rem 2.5rem;
+        cursor: pointer;
+        .input{
+          position: relative;
+          left: 1.6rem;
+          font-size: 1.6rem;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          .input-container {
+            display: block;
+            position: relative;
+            align-items: center;
+            padding-left: 4.5rem;
+            padding-top: 0.5rem;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+          }
+          .input-container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+          }
+          .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 3rem;
+            width: 3rem;
+            border-radius: 0.8rem;
+            border: 0.41rem solid var(--verde-oscuro-principal) ;
+          }
+          .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+          .input-container input:checked ~ .checkmark:after {
+            display: block;
+          }
+          .input-container .checkmark:after {
+            left: 0.7rem;
+            top: 0.2rem;
+            width: .5rem;
+            height: 1rem;
+            border: solid#ffbd12;
+            border-width: 0 0.4rem 0.4rem 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+        }
+      }
+      .checkbox:hover{
+        background-color: #f4f4f4;
+      }
+
+
+      .input-container:hover input ~ .checkmark{
+        background-color:#fff;
+      }
+      .input-container input:checked ~ .checkmark {
+        border: 0.41rem solid #ffbd12 ;
+        background-color: #f4f4f4;
+      }
+      #text-reportes {
+        position: relative;
+        left: 2.7rem;
+        width: 30.3rem;
+        height: 1.7rem;
+        flex-grow: 0;
+        margin: 0.5rem 5.192rem 0rem 2.50rem;
+        font-size: 1.6rem;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+      }
+    }
+
+
+  }
+
+ }

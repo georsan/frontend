@@ -1,0 +1,561 @@
+header{
+    position: relative;
+    display: flex;
+    row-gap: 1rem;
+    flex-direction: stretch;
+    height: 12rem;
+    flex-direction: column;
+    align-items: center;
+    .add-device{
+      cursor: pointer;
+      width: 36.7rem;
+      height: 7.4rem;
+      display: flex;
+      flex-grow: 0;
+      order: 2;
+      .add-divice-text{
+        width: 27.1rem;
+        height: 5.4rem;
+        margin: 0.7rem 0.6rem 0.3rem 0;
+        padding: 0.3rem 2rem;
+        border-radius: 5px;
+        box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+        background-color: var(--verde-oscuro-resalte);
+        text-align: left;
+        #add_box{
+          position: relative;
+          bottom: 0.2rem;
+          font-size: 4.5rem;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+        }
+        span{
+          position: relative;
+          bottom: 2rem;
+          margin-left: 0.4rem;
+          font-size: 1.4rem;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+        }
+      }
+      #help_center{
+        position: relative;
+        left: 1.5rem;
+        bottom: 0.5rem;
+        font-size: 6.5rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+      }
+
+    }
+    .perfil{
+      cursor: pointer;
+      width: 36.7rem;
+      height: 7.4rem;
+      flex-grow: 0;
+      order: 1;
+      z-index: 1;
+      .perfil-text{
+        width: 36.7rem;
+        height: 5.4rem;
+        padding: 0.3rem 2rem;
+        border-radius: 5px;
+        box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+        background-color: #4ecbc2;
+        text-align: left;
+        #menu{
+          position: relative;
+          left: 17rem;
+          bottom: 0.2rem;
+          font-size: 4.5rem;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+        }
+        span{
+          position: relative;
+          bottom: 2rem;
+          margin-left: 0.4rem;
+          font-size: 1.4rem;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+        }
+        #perfil-menu{
+          position: relative;
+          right: 1.8rem;
+          bottom: 0.7rem;
+          width: 36.7rem;
+          height: 14.3rem;
+          padding: 1.7rem 1.1rem 1.1rem;
+          border-radius: 6px;
+          background-color: var(--verde-claro-principal);
+          z-index: -1;
+          .menu-row{
+            width: 32.9rem;
+            height: 5.5rem;
+            flex-grow: 0;
+            font-size: 1.6rem;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            margin: 0 0 0.5rem;
+            padding: 1.4rem 5.7rem 1.4rem 1.6rem;
+            border-radius: 5px;
+            background-color: rgba(61, 208, 121, 0.6);
+
+          }
+          #edit{
+            position: relative;
+            top: 0.2rem;
+            font-size: 4rem;
+          }
+          #logout{
+            position: relative;
+            top: 0.2rem;
+            font-size: 4rem;
+          }
+          .menu-row:hover{
+            background-color: var(--verde-claro-principal);
+          }
+
+        }
+        }
+      }
+    }
+
+
+
+
+// tablets
+@media screen and (min-width: 47.563em) and (max-width: 72.5em){
+  .perfil{
+    grid-area: perfil;
+  }
+  .add-device{
+    grid-area: device;
+  }
+  header{
+    display: grid;
+    grid-template-columns: repeat(2, 36.5rem);
+    grid-column-gap: 2.61em;
+    justify-content: center;
+    grid-template-areas: 'device perfil';
+    .perfil{
+      position: relative;
+      left: 11.3rem;
+      width: 25.1rem;
+      height: 5.4rem;
+      .perfil-text{
+        width: 25.1rem;
+        height: 5.4rem;
+        flex-grow: 0;
+        border-radius: 5px;
+        box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+        background-color: #4ecbc2;
+        #menu{
+          position: relative;
+          left: 7rem;
+        }
+        span{
+          position: relative;
+          bottom: 2rem;
+          margin-left: 0.4rem;
+          font-size: 1.4rem;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+        }
+        #perfil-menu{
+          position: relative;
+          right: 1.8rem;
+          bottom: 0.7rem;
+          width: 24.7rem;
+          height: 14.3rem;
+          padding: 1.7rem 1.1rem 1.1rem;
+          border-radius: 6px;
+          background-color: var(--verde-claro-principal);
+          z-index: -1;
+          .menu-row{
+            width: 22.9rem;
+            height: 5.5rem;
+            flex-grow: 0;
+            font-size: 1.6rem;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            margin: 0 0 0.5rem;
+            padding: 1.4rem 5.7rem 1.4rem 1.6rem;
+            border-radius: 5px;
+            background-color: rgba(61, 208, 121, 0.6);
+
+          }
+          #edit{
+            position: relative;
+            top: 0.2rem;
+            font-size: 4rem;
+          }
+          #logout{
+            position: relative;
+            top: 0.2rem;
+            font-size: 4rem;
+          }
+          .menu-row:hover{
+            background-color: var(--verde-claro-principal);
+          }
+
+        }
+
+      }
+
+
+    }
+
+  }
+  .add-device{
+    position: relative;
+    top: 0.4rem;
+  }
+}
+// tablets
+@media screen and (min-width: 72.5em) and (max-width: 87.5em)  {
+  .perfil{
+    grid-area: perfil;
+  }
+  .add-device{
+    grid-area: device;
+  }
+  header{
+    display: grid;
+    grid-template-columns: repeat(3, 36.5rem);
+    grid-column-gap: 2.61em;
+    justify-content: center;
+    grid-template-areas: 'device perfil';
+    .perfil{
+      position: relative;
+      left: 50.3rem;
+      width: 25.1rem;
+      height: 5.4rem;
+      .perfil-text{
+        width: 25.1rem;
+        height: 5.4rem;
+        flex-grow: 0;
+        border-radius: 5px;
+        box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+        background-color: #4ecbc2;
+        #menu{
+          position: relative;
+          left: 7rem;
+        }
+        span{
+          position: relative;
+          bottom: 2rem;
+          margin-left: 0.4rem;
+          font-size: 1.4rem;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+        }
+        #perfil-menu{
+          position: relative;
+          right: 1.8rem;
+          bottom: 0.7rem;
+          width: 24.7rem;
+          height: 14.3rem;
+          padding: 1.7rem 1.1rem 1.1rem;
+          border-radius: 6px;
+          background-color: var(--verde-claro-principal);
+          z-index: -1;
+          .menu-row{
+            width: 22.9rem;
+            height: 5.5rem;
+            flex-grow: 0;
+            font-size: 1.6rem;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            margin: 0 0 0.5rem;
+            padding: 1.4rem 5.7rem 1.4rem 1.6rem;
+            border-radius: 5px;
+            background-color: rgba(61, 208, 121, 0.6);
+
+          }
+          #edit{
+            position: relative;
+            top: 0.2rem;
+            font-size: 4rem;
+          }
+          #logout{
+            position: relative;
+            top: 0.2rem;
+            font-size: 4rem;
+          }
+          .menu-row:hover{
+            background-color: var(--verde-claro-principal);
+          }
+
+        }
+      }
+
+
+    }
+
+  }
+  .add-device{
+    position: relative;
+    top: 0.4rem;
+  }
+}
+// tablets
+@media screen and (min-width: 87.5em)and (max-width:118.75em){
+  .perfil{
+    grid-area: perfil;
+  }
+  .add-device{
+    grid-area: device;
+  }
+  header{
+    display: grid;
+    grid-template-columns: repeat(3, 36.5rem);
+    grid-column-gap: 22em;
+    justify-content: center;
+    grid-template-areas: 'device perfil';
+    .perfil{
+      position: relative;
+      left: 70rem;
+      width: 25.1rem;
+      height: 5.4rem;
+      .perfil-text{
+        width: 25.1rem;
+        height: 5.4rem;
+        flex-grow: 0;
+        border-radius: 5px;
+        box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+        background-color: #4ecbc2;
+        #menu{
+          position: relative;
+          left: 7rem;
+        }
+        span{
+          position: relative;
+          bottom: 2rem;
+          margin-left: 0.4rem;
+          font-size: 1.4rem;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+        }
+        #perfil-menu{
+          position: relative;
+          right: 1.8rem;
+          bottom: 0.7rem;
+          width: 24.7rem;
+          height: 14.3rem;
+          padding: 1.7rem 1.1rem 1.1rem;
+          border-radius: 6px;
+          background-color: var(--verde-claro-principal);
+          z-index: -1;
+          .menu-row{
+            width: 22.9rem;
+            height: 5.5rem;
+            flex-grow: 0;
+            font-size: 1.6rem;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            margin: 0 0 0.5rem;
+            padding: 1.4rem 5.7rem 1.4rem 1.6rem;
+            border-radius: 5px;
+            background-color: rgba(61, 208, 121, 0.6);
+
+          }
+          #edit{
+            position: relative;
+            top: 0.2rem;
+            font-size: 4rem;
+          }
+          #logout{
+            position: relative;
+            top: 0.2rem;
+            font-size: 4rem;
+          }
+          .menu-row:hover{
+            background-color: var(--verde-claro-principal);
+          }
+
+        }
+      }
+
+
+    }
+
+  }
+  .add-device{
+    position: relative;
+    top: 0.4rem;
+  }
+}
+@media screen and (min-width:118.75em){
+  .perfil{
+    grid-area: perfil;
+  }
+  .add-device{
+    grid-area: device;
+  }
+  header{
+    display: grid;
+    grid-template-columns: repeat(3, 36.5rem);
+    grid-column-gap: 40em;
+    justify-content: center;
+    grid-template-areas: 'device perfil';
+    .perfil{
+      position: relative;
+      left: 89.8rem;
+      width: 25.1rem;
+      height: 5.4rem;
+      .perfil-text{
+        width: 25.1rem;
+        height: 5.4rem;
+        flex-grow: 0;
+        border-radius: 5px;
+        box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+        background-color: #4ecbc2;
+        #menu{
+          position: relative;
+          left: 7rem;
+        }
+        span{
+          position: relative;
+          bottom: 2rem;
+          margin-left: 0.4rem;
+          font-size: 1.4rem;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+        }
+        #perfil-menu{
+          position: relative;
+          right: 1.8rem;
+          bottom: 0.7rem;
+          width: 24.7rem;
+          height: 14.3rem;
+          padding: 1.7rem 1.1rem 1.1rem;
+          border-radius: 6px;
+          background-color: var(--verde-claro-principal);
+          z-index: -1;
+          .menu-row{
+            width: 22.9rem;
+            height: 5.5rem;
+            flex-grow: 0;
+            font-size: 1.6rem;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            margin: 0 0 0.5rem;
+            padding: 1.4rem 5.7rem 1.4rem 1.6rem;
+            border-radius: 5px;
+            background-color: rgba(61, 208, 121, 0.6);
+
+          }
+          #edit{
+            position: relative;
+            top: 0.2rem;
+            font-size: 4rem;
+          }
+          #logout{
+            position: relative;
+            top: 0.2rem;
+            font-size: 4rem;
+          }
+          .menu-row:hover{
+            background-color: var(--verde-claro-principal);
+          }
+
+        }
+      }
+
+
+    }
+
+  }
+  .add-device{
+    position: relative;
+    top: 0.4rem;
+  }
+}
+@media screen and (max-width: 47.563em) {
+  header{
+    position: relative;
+    top: 4rem;
+  }
+}

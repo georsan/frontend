@@ -1,0 +1,56 @@
+.container{
+  background-color: #fff;
+  width: 32rem;
+  height: 8.5rem;
+  padding-bottom: 1rem;
+  border-bottom-left-radius:1.5rem;
+  border-bottom-right-radius:1.5rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  padding-right: 0.8rem;
+  align-items: center;
+  .btn-volver{
+    width: 19rem;
+    height: 5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+    border: solid 2px var(--verde-oscuro-principal);
+    background-color: var(--verde-claro-principal);
+    text-align: center;
+    position: relative;
+    margin-left: 2.5rem;
+    span{
+      position: absolute;
+      top: 1rem;
+      right: 25%;
+    }
+  }
+  .btn-guardar{
+    width: 19rem;
+    height: 5rem;
+    margin: 1.3rem 2.346rem 0 4.272rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px 0 rgba(12, 41, 24, 0.15);
+    background-color: #5fce7d;
+    text-align: center;
+    position: relative;
+    justify-items: center;
+    margin-bottom: 1.35rem;
+
+    span{
+      position: absolute;
+      top: 1.2rem;
+      right: 17%;
+    }
+
+  }
+}
+.btn-guardar:hover,.btn-volver:hover{
+  cursor:pointer;
+}

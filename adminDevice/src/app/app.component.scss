@@ -1,0 +1,93 @@
+.container-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9.7rem;
+
+ }
+
+ .container{
+  width: 32rem;
+  height: 27.1rem;
+   flex-grow: 0;
+   padding: 0 0 1.254rem;
+   border-radius: 2rem;
+   box-shadow: 0 8px 20px 0 rgba(19, 30, 32, 0.15);
+   background-color: #fff;
+   .container-header{
+     display: flex;
+     flex-direction: row;
+     width: 32rem;
+     height: 9.5rem;
+     border-top-left-radius:1.5rem;
+     border-top-right-radius: 1.5rem;
+     background-color: #5fce7d;
+     position: relative;
+     text-align: left;
+     font-stretch: normal;
+     font-style: normal;
+     line-height: normal;
+     letter-spacing: normal;
+     .icon{
+       font-size: 4.9rem;
+       position: relative;
+       top: 3rem;
+       left: 2rem;
+     }
+     .header-text{
+       position: relative;
+       width: 25.3rem;
+       left: 3rem;
+       top: 4.5rem;
+       .titulo{
+         width: 25.3rem;
+         font-size: 1.6rem;
+         font-weight: 800;
+       }
+       .texto{
+         width: 20.5rem;
+         font-size: 1.2rem;
+         margin: 0.3rem 3.8rem 0 0;
+         font-size: 1.2rem;
+       }
+
+     }
+     #cancel{
+       position: absolute;
+       left: 28rem;
+       bottom: 5.8rem;
+       font-size: 3rem;
+     }
+
+   }
+   .container-div{
+    width: 30.6rem;
+    height: 6.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin: 0.7rem 0.8rem 0.35rem 0.6rem;
+    padding: 1.4rem 5.7rem 1.4rem 1.6rem;
+    border-radius: 3px;
+    background-color: #fff;
+     #icono{
+       font-size: 4rem;
+     }
+     .input-data{
+       width: 32.1rem;
+       height: 3.5rem;
+       flex-grow: 0;
+       padding: 0.787rem 14.6rem 1.613rem 0.3rem;
+       font-size: 1.6rem;
+       font-weight: bold;
+       font-stretch: normal;
+       font-style: normal;
+
+     }
+     .reporte{
+       padding-bottom: 4rem;
+     }
+   }
+ }

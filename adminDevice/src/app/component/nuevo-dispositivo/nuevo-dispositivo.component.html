@@ -1,0 +1,24 @@
+<div class="container-body" >
+  <div class="container" >
+    <div class="container-header">
+      <span class="material-symbols-outlined icon">add_box</span>
+        <div class="header-text">
+            <div class="titulo"><span >AGREGAR DISPOSITIVO</span></div>
+          </div>
+
+       <span class="material-symbols-outlined" routerLink="/home"  id="cancel">cancel</span>
+    </div>
+    <div class="body">
+      <app-input [titulo]="data.titulo" [icono]="data.icono" [type]="data.type" *ngFor="let data of inputs"></app-input>
+      <div class="input">
+        <label class="input-container"><p>Alertas y reportes</p>
+          <input type="checkbox" >
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="btn-guardar">
+        <span>Guardar</span>
+      </div>
+  </div>
+  </div>
+

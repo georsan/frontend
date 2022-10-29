@@ -1,0 +1,51 @@
+<div class="container">
+<div class="container-card">
+  <div class="card-header">
+      <div class="card-left">
+          <span class="ID-Nombre-Modelo">{{infoDevice.id}}</span>
+          <div class="ID-Nombre-Device"><span >{{infoDevice.nombre}}</span></div>
+          <span class="Modelo-EVA">Modelo: {{infoDevice.modelo}}</span>
+      </div>
+      <div class="card-right">
+          <div >
+              <span class="material-symbols-outlined" id="sensors">sensors</span><div class="Ultima-comxin"><span > Ultima conexión</span></div>
+          </div>
+          <span class="time-desconexion">{{infoDevice.ts}}</span>
+      </div>
+  </div>
+  <div class="Resalte">
+      <div class="Resalte-container">
+      <div class="bateria">
+          <span class="material-symbols-outlined" id="battery_20">battery_full</span>
+          <div><span class="pBateria">Batería</span><span class="pBaterias" id="PorcetajeB">{{infoDevice.bateria}}%</span></div>
+
+      </div>
+      <div class="corriente">
+          <span class="material-symbols-outlined" id="power">power</span>
+          <div><span class="corrienteTitulo"> Corriente</span><span class="Corrientestate" id="corrientE">{{infoDevice.corriente}}</span></div>
+
+      </div>
+      <div class="señal">
+          <span class="material-symbols-outlined" id="network_wifi">network_wifi</span>
+          <div><span class="Señal">Señal</span><span id="CalidadS" class="señalCalidad">{{infoDevice.senal}}</span></div>
+
+      </div>
+  </div>
+      <div class="metricas">
+          <div class="humedad">
+              <div><span class="material-symbols-outlined" id="water_drop">water_drop</span><span class="Phumedad">{{infoDevice.humedad}}%</span></div>
+          </div>
+
+          <div class="temperatura">
+             <div><span class="material-symbols-outlined" id="temp_dropt">thermometer</span><span class="Ptem"> {{infoDevice.temperatura}}°C</span></div>
+          </div>
+
+      </div>
+  </div>
+  <div class="card-action">
+      <div class="alertas"><span class="material-symbols-outlined" ><a  id="notifications" >emoji_flags</a></span></div>
+      <div class="estadisticas"><span class="material-symbols-outlined" ><a id="add_chart">add_chart</a></span></div>
+      <div class="configuracion"><span class="material-symbols-outlined" ><a routerLink="/device" id="settings">settings</a></span></div>
+  </div>
+</div>
+</div>

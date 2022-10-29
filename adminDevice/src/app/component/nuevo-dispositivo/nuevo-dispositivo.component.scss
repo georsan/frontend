@@ -1,0 +1,158 @@
+.container-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5.7rem;
+
+ }
+
+ .container{
+   width: 32rem;
+   height: 60.6rem;
+   flex-grow: 0;
+   padding: 0 0 1.254rem;
+   border-radius: 2rem;
+   box-shadow: 0 8px 20px 0 rgba(19, 30, 32, 0.15);
+   background-color: #fff;
+   .container-header{
+     display: flex;
+     flex-direction: row;
+     width: 32rem;
+     height: 9.5rem;
+     border-top-left-radius:1.5rem;
+     border-top-right-radius: 1.5rem;
+     background-color: #5fce7d;
+     position: relative;
+     text-align: left;
+     font-stretch: normal;
+     font-style: normal;
+     line-height: normal;
+     letter-spacing: normal;
+     .icon{
+       font-size: 4.9rem;
+       position: relative;
+       top: 2rem;
+       left: 2rem;
+     }
+     .header-text{
+       position: relative;
+       width: 25.3rem;
+       left: 3rem;
+       top: 3.5rem;
+       .titulo{
+         width: 25.3rem;
+         font-size: 1.6rem;
+         font-weight: 800;
+       }
+       .texto{
+         width: 20.5rem;
+         font-size: 1.2rem;
+         margin: 0.3rem 3.8rem 0 0;
+         font-size: 1.2rem;
+       }
+
+     }
+     #cancel{
+       position: absolute;
+       left: 28rem;
+       bottom: 5.4rem;
+       font-size: 3rem;
+       cursor: pointer;
+     }
+
+   }
+ .body{
+  margin-top: 1rem;
+    .input{
+      font-size: 1.6rem;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      position: relative;
+      top: 2rem;
+      left: 7rem;
+      .input-container {
+        display: block;
+        position: relative;
+        align-items: center;
+        padding-left: 4.5rem;
+        padding-top: 0.5rem;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .input-container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 0.8rem;
+        border: 0.41rem solid var(--verde-oscuro-principal) ;
+      }
+
+      .input-container:hover input ~ .checkmark {
+        background-color:rgb(238, 238, 225);
+      }
+      .input-container input:checked ~ .checkmark {
+        border: 0.41rem solid #ffbd12 ;
+      }
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      .input-container input:checked ~ .checkmark:after {
+        display: block;
+      }
+      .input-container .checkmark:after {
+        left: 0.8rem;
+        top: 0.2rem;
+        width: .5rem;
+        height: 1rem;
+        border: solid#ffbd12;
+        border-width: 0 0.4rem 0.4rem 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  .btn-guardar{
+    position: relative;
+    cursor: pointer;
+    top:6rem;
+    left: 0.84rem;
+    width: 30.325rem;
+    height: 4.6rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px 0 rgba(12, 41, 24, 0.15);
+    background-color: #5fce7d;
+    span{
+      position: absolute;
+      left: 6rem;
+      top: 1rem;
+      width: 19.6rem;
+      height: 2.4rem;
+      font-size: 2rem;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+    }
+  }
+ }
+ }

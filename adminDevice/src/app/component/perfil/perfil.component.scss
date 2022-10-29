@@ -1,0 +1,62 @@
+.container-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9.7rem;
+  font-weight: 800;
+  .container{
+    width: 32rem;
+    height: 31.5rem;
+
+    .container-header{
+      display: flex;
+      flex-direction: row;
+      width: 32rem;
+      height: 8.9rem;
+      border-top-left-radius:1.5rem;
+      border-top-right-radius: 1.5rem;
+      background-color: #5fce7d;
+      position: relative;
+      text-align: left;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      .icon{
+        font-size: 4.9rem;
+        position: relative;
+        top: 2rem;
+        left: 2rem;
+        font-weight: 800;
+
+      }
+      .header-text{
+        position: relative;
+        width: 25.3rem;
+        left: 3rem;
+        top: 3.5rem;
+        font-weight: 800;
+        .titulo{
+          width: 25.3rem;
+          font-size: 1.6rem;
+        }
+        .texto{
+          width: 20.5rem;
+          font-size: 1.2rem;
+          margin: 0.3rem 3.8rem 0 0;
+          font-size: 1.2rem;
+        }
+
+      }
+      #cancel{
+        cursor: pointer;
+        position: absolute;
+        left: 28.5rem;
+        bottom: 5.3rem;
+        font-size: 3rem;
+      }
+
+    }
+  }
+
+ }

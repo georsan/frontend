@@ -1,0 +1,20 @@
+<div class="container-body">
+  <div class="container">
+    <div class="container-header">
+      <span class="material-symbols-outlined icon">settings_account_box</span>
+        <div class="header-text">
+            <div class="titulo"><span >EDITAR PERFIL</span></div>
+          </div>
+
+        <span class="material-symbols-outlined " routerLink="/home" id="cancel">cancel</span>
+    </div>
+
+    <div class="body">
+      <app-input [titulo]="data.titulo" [icono]="data.icono" [type]="data.type" *ngFor="let data of inputs"></app-input>
+    </div>
+    <app-botones volver="/setting"></app-botones>
+  </div>
+</div>
+
+
+

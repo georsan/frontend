@@ -1,0 +1,61 @@
+<div class="container-body">
+  <div class="container">
+    <div class="container-header">
+      <span class="material-symbols-outlined icon">edit_notifications</span>
+        <div class="header-text">
+            <div class="titulo"><span >ALERTA Y REPORTES</span></div>
+            <div class="texto"><p>Se configurara para todos los dispositivos que tengan activas las alertas</p></div>
+          </div>
+
+        <span class="material-symbols-outlined " id="cancel" routerLink="/home">cancel</span>
+    </div>
+
+    <div class="body">
+      <div class="text-alertas">
+        <span>ALERTA:</span>
+      </div>
+      <div class="checkbox">
+        <div class="input">
+        <label class="input-container"><p>Desconexión única</p>
+          <input type="checkbox" >
+          <span class="checkmark"></span>
+        </label>
+      </div>
+
+      </div>
+      <div class="checkbox">
+        <div class="input">
+        <label class="input-container"><p>Desconexión diaria</p>
+          <input type="checkbox" >
+          <span class="checkmark"></span>
+        </label>
+      </div>
+
+      </div>
+      <div class="checkbox">
+        <div class="input">
+        <label class="input-container"><p>Re-conexión</p>
+          <input type="checkbox" >
+          <span class="checkmark"></span>
+        </label>
+      </div>
+
+      </div>
+
+      <div id="text-reportes">
+        <span>REPORTES MENSUALES:</span>
+      </div>
+      <div class="checkbox">
+        <div class="input">
+        <label class="input-container"><p>Conectividad del dispositivo</p>
+          <input type="checkbox" >
+          <span class="checkmark"></span>
+        </label>
+      </div>
+
+      </div>
+
+    </div>
+    <app-botones volver="/setting"></app-botones>
+  </div>
+</div>
